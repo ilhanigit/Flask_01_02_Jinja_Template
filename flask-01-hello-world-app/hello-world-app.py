@@ -13,6 +13,10 @@ def head2():
 def head3():
     return "third page"
 
+@app.route("/forth/<string:id>")
+def fourth(id):
+    return f'Id of this page is {id}'
+
 if __name__ == '__main__':
 
     app.run(debug=True, port=30000)
